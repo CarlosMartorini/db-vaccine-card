@@ -1,5 +1,5 @@
 from flask import Blueprint
-from app.models.vaccination_model import create_vaccine_card, get_all_vaccines_cards
+from app.controllers.vaccination_controller import create_vaccine_card, get_all_vaccines_cards
 
 bp = Blueprint('vaccination_bp', __name__, url_prefix='/vaccination')
 
