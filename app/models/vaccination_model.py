@@ -9,7 +9,7 @@ class Vaccination(db.Model):
     name: str
     first_shot_date: datetime
     second_shot_date: datetime
-    vacine_name: str
+    vaccine_name: str
     health_unit_name: str
 
     __tablename__ = 'vaccine_card'
@@ -18,6 +18,6 @@ class Vaccination(db.Model):
     name = db.Column(db.String(255), nullable=False)
     first_shot_date = db.Column(db.DateTime())
     second_shot_date = db.Column(db.DateTime())
-    vacine_name = db.Column(db.String(255), nullable=False)
+    vaccine_name = db.Column(db.String(255), nullable=False)
     health_unit_name = db.Column(db.String(255))
 
